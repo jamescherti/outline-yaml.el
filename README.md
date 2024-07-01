@@ -10,7 +10,7 @@ It creates a structured view of your YAML files for better navigation and readab
 
 To install the `outline-yaml` using `straight.el`:
 
-1. If you haven't already done so, [add the `straight.el` bootstrap code](https://github.com/radian-software/straight.el?tab=readme-ov-file#getting-started) to your init file.
+1. If you haven't already done so, [add the straight.el bootstrap code](https://github.com/radian-software/straight.el?tab=readme-ov-file#getting-started) to your init file.
 
 2. Add the following code to your Emacs init file:
 ```
@@ -23,13 +23,6 @@ To install the `outline-yaml` using `straight.el`:
   :hook
   ((yaml-mode . outline-yaml-minor-mode)
    (yaml-ts-mode . outline-yaml-minor-mode)))
-```
-
-## Usage
-
-To use outline-yaml-minor-mode with YAML files, simply enable it in your YAML buffer:
-```
-(outline-yaml-minor-mode)
 ```
 
 ## License
