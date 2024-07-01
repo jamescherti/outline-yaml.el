@@ -16,7 +16,9 @@ The `outline-yaml.el` Emacs package provides a minor mode for Emacs that enables
 
 To install the `outline-yaml` using `straight.el`:
 
-1. If you haven't already done so, [add the straight.el bootstrap code](https://github.com/radian-software/straight.el?tab=readme-ov-file#getting-started) to your init file.
+1. Install and configure [yaml-mode](https://github.com/yoshiki/yaml-mode) or `yaml-ts-mode`.
+
+2. If you haven't already done so, [add the straight.el bootstrap code](https://github.com/radian-software/straight.el?tab=readme-ov-file#getting-started) to your init file.
 
 2. Add the following code to your Emacs init file:
 ```
