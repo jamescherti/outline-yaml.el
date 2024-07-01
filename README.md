@@ -6,12 +6,6 @@ This package helps when editing long and complex YAML files, which makes code fo
 
 ![](https://raw.githubusercontent.com/jamescherti/outline-yaml.el/main/.screenshot.png)
 
-## Features
-
-- Code Folding: Collapse and expand sections of YAML files based on indentation, helping you to focus on the parts of the file that matter most at any given time.
-- Outlining: Create a structured view of your YAML files, enhancing readability and making it easier to navigate through different sections.
-- Seamless Integration: Works seamlessly with Emacs' outline-minor-mode, providing a familiar and consistent user experience.
-
 ## Installation
 
 ### Install using straight
