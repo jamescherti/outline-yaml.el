@@ -4,6 +4,12 @@ The `outline-yaml.el` Emacs package provides a minor mode for Emacs that enables
 
 ![](https://raw.githubusercontent.com/jamescherti/outline-yaml.el/main/.screenshot.png)
 
+## Features
+
+- Code Folding: Collapse and expand sections of YAML files based on indentation, helping you to focus on the parts of the file that matter most at any given time.
+- Outlining: Create a structured view of your YAML files, enhancing readability and making it easier to navigate through different sections.
+- Seamless Integration: Works seamlessly with Emacs' outline-minor-mode, providing a familiar and consistent user experience.
+
 ## Installation
 
 ### Install using straight
@@ -24,6 +30,23 @@ To install the `outline-yaml` using `straight.el`:
   ((yaml-mode . outline-yaml-minor-mode)
    (yaml-ts-mode . outline-yaml-minor-mode)))
 ```
+
+## Usage
+
+To start using outline-yaml.el, enable the minor mode in your YAML buffer:
+
+```
+(outline-yaml-minor-mode)
+```
+
+You can also enable it automatically for all YAML files by adding the following to your Emacs configuration:
+
+```
+(yaml-mode . outline-yaml-minor-mode)
+(yaml-ts-mode . outline-yaml-minor-mode)
+```
+
+Once enabled, you can use the standard `outline-mode`/`outline-minor-mode` commands to fold and unfold sections of your YAML file.
 
 ## License
 
