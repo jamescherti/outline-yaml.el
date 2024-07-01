@@ -55,53 +55,59 @@
   :lighter " OutlYaml"
   :group 'outline-yaml
   (if outline-yaml-minor-mode
-      (progn (setq-local outline-level 'outline-yaml--level)
-             (setq-local outline-heading-end-regexp "\n")
-             (setq-local outline-regexp
-                         (rx
-                          bol
-                          (or
-                           ;; 1. Document separator "---"
-                           (seq "---" (seq (zero-or-more " \t")
-                                           (or (optional "#")
-                                               eol)))
+      (progn
+        (setq-local outline-level 'outline-yaml--level)
+        (setq-local outline-heading-end-regexp "\n")
+        (setq-local outline-regexp
+                    (rx
+                     bol
+                     (or
+                      ;; 1. Document separator "---"
+                      (seq "---"
+                           (seq (zero-or-more " \t")
+                                (or (optional "#")
+                                    eol)))
 
-                           (seq (zero-or-more (any " \t"))  ; Indentation
-                                (or
-                                 ;; 2. List
-                                 (seq "-" (any " \t"))
+                      (seq
+                       (zero-or-more (any " \t"))  ; Indentation
+                       (or
+                        ;; 2. List
+                        (seq "-" (any " \t"))
 
-                                 ;; 3. Handling list items or keys in mappings
-                                 (seq (or
-                                       ;; Double quoted strings
-                                       (seq "\""
-                                            ;; Matches an escaped quote or any
-                                            ;; other character except a quote
-                                            ;; or newline
-                                            (zero-or-more
-                                             (or (seq "\\" "\"")
-                                                 (not (in "\"" "\n"))))
-                                            "\"")
+                        ;; 3. Handling list items or keys in mappings
+                        (seq (or
+                              ;; Double quoted strings
+                              (seq "\""
+                                   ;; Matches an escaped quote or any
+                                   ;; other character except a quote
+                                   ;; or newline
+                                   (zero-or-more
+                                    (or (seq "\\" "\"")
+                                        (not (in "\""
+                                                 "\n"))))
+                                   "\"")
 
-                                       ;; Single quoted strings
-                                       (seq "'"
-                                            ;; Matches an escaped single quote
-                                            ;; Matches any other character
-                                            ;; except a single quote or newline
-                                            (zero-or-more
-                                             (or "''" (not (in "'" "\n"))))
-                                            "'")
+                              ;; Single quoted strings
+                              (seq "'"
+                                   ;; Matches an escaped single quote
+                                   ;; Matches any other character
+                                   ;; except a single quote or newline
+                                   (zero-or-more
+                                    (or "''"
+                                        (not (in "'"
+                                                 "\n"))))
+                                   "'")
 
-                                       ;; Unquoted keys
-                                       ;; characters (one-or-more (not (in
-                                       ;; "#:[]{}," "\n"))))
-                                       (one-or-more (not (in "#" ":" "\n"))))
+                              ;; Unquoted keys
+                              (one-or-more (not (in "#"
+                                                    ":"
+                                                    "\n"))))
 
-                                      ;; Colon indicating a key in YAML
-                                      ":"))))
-                          (zero-or-more nonl)
-                          eol))
-             (outline-minor-mode 1))
+                             ;; Colon indicating a key in YAML
+                             ":"))))
+                     (zero-or-more nonl)
+                     eol))
+        (outline-minor-mode 1))
     (outline-minor-mode -1)))
 
 (provide 'outline-yaml)
