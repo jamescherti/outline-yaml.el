@@ -1,6 +1,8 @@
-# outline-yaml.el - Outline and Code folding for Yaml files
+# outline-yaml.el - Outline and Code folding for YAML files
 
-The `outline-yaml.el` Emacs package provides a minor mode for Emacs that enables code folding and outlining for YAML files. It leverages the built-in `outline` package to provide a structured view of YAML files, allowing users to collapse and expand sections based on indentation levels.
+The `outline-yaml.el` Emacs package provides a minor mode for Emacs that enables code folding and outlining for YAML files. It leverages the built-in `outline-minor-mode` to provide a structured view of YAML files, allowing users to fold and unfold YAML files.
+
+This package helps when editing long and complex YAML files, which makes code folding becomes an invaluable tool because it is allowing the collapse and expansion of sections of the file and enhancing readability and navigation.
 
 ![](https://raw.githubusercontent.com/jamescherti/outline-yaml.el/main/.screenshot.png)
 
