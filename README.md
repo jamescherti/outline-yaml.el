@@ -34,22 +34,22 @@ To install the `outline-yaml` using `straight.el`:
 ### Vanilla Emacs
 
 Once installed with `use-package` and activated with `outline-yaml-minor-mode` in a YAML buffer, you can use the standard `outline-mode`/`outline-minor-mode` commands to fold and unfold sections of your YAML file:
-- outline-hide-body: Hide all body lines in buffer, leaving all headings visible.
-- outline-hide-other: Hide everything except current body and parent and top-level headings.
-- outline-hide-entry: Hide the body directly following this heading.
-- outline-hide-leaves: Hide the body after this heading and at deeper levels.
-- outline-hide-subtree: Hide everything after this heading at deeper levels.
-- outline-show-children: Show all direct subheadings of this heading.
-- outline-hide-sublevels: Hide everything but the top LEVELS levels of headers, in whole buffer.
-- outline-show-all: Show all of the text in the buffer.
-- outline-show-entry: Show the body directly following this heading.
-- outline-show-subtree: Show everything after this heading at deeper levels.
-- outline-show-branches: Show all subheadings of this heading, but not their bodies.
-- outline-show-children: Show all direct subheadings of this heading.
+- `outline-hide-body`: Hide all body lines in buffer, leaving all headings visible.
+- `outline-hide-other`: Hide everything except current body and parent and top-level headings.
+- `outline-hide-entry`: Hide the body directly following this heading.
+- `outline-hide-leaves`: Hide the body after this heading and at deeper levels.
+- `outline-hide-subtree`: Hide everything after this heading at deeper levels.
+- `outline-show-children`: Show all direct subheadings of this heading.
+- `outline-hide-sublevels`: Hide everything but the top LEVELS levels of headers, in whole buffer.
+- `outline-show-all`: Show all of the text in the buffer.
+- `outline-show-entry`: Show the body directly following this heading.
+- `outline-show-subtree`: Show everything after this heading at deeper levels.
+- `outline-show-branches`: Show all subheadings of this heading, but not their bodies.
+- `outline-show-children`: Show all direct subheadings of this heading.
 
 ### Evil mode
 
-In Evil mode, it works out of the box, and you can use the Evil keyboard mappings: zo, zc, zO, zC, za, zr, and zm to manage folds.
+In Evil mode, `outline-yaml` works out of the box, and you can use the Evil keyboard mappings: zo, zc, zO, zC, za, zr, and zm to manage folds.
 
 ## Frequently asked questions
 
