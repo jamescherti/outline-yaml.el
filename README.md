@@ -46,23 +46,6 @@ You can also enable it automatically for all YAML files by adding the following 
 
 Once enabled, you can use the standard `outline-mode`/`outline-minor-mode` commands to fold and unfold sections of your YAML file.
 
-## How to customize the Ellipsis (...)?
-
-The built-in Emacs outline-mode and outline-minor-mode allow structuring documents with collapsible sections. By default, these modes use an ellipsis (“…”) to indicate folded text.
-
-However, you might want to customize this ellipsis to better suit your needs. Here is an example of how to change the ellipsis in both outline-mode and outline-minor-mode to ▼:
-```
-(defun my-set-standard-display-table-ellipsis (ellipsis)
-  "Set the standard display table ellipsis to ELLIPSIS."
-  (let* ((face-offset (* (face-id 'shadow) (lsh 1 22)))
-         (value (vconcat (mapcar (lambda (c) (+ face-offset c)) ellipsis))))
-    (set-display-table-slot standard-display-table 'selective-display value)))
-
-(my-set-standard-display-table-ellipsis " ▼")
-```
-
-Customizing the ellipsis in outline-mode and outline-minor-mode is a simple yet effective way to personalize your Emacs and create a more visually appealing way to handle folds.
-
 ## How to change the Ellipsis ("...") to (▼)?
 
 If you want to make the ellipsis of `outline-yaml-mode` look like the screenshot above (▼), use the code snippet in this article: [Changing the Ellipsis (“…”) in outline-mode and outline-minor-mode.](https://www.jamescherti.com/emacs-customize-ellipsis-outline-minor-mode/).
