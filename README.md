@@ -59,7 +59,7 @@ If you want to make the ellipsis of `outline-yaml-mode` look like the screenshot
 
 ### Why not use origami.el?
 
-origami.el is no longer actively maintained and has known bugs that can affect its reliability and performance.
+The `origami.el` package is no longer actively maintained and has known bugs that can affect its reliability and performance.
 
 On the other hand, `outline-yaml.el` leverages the built-in outline-minor-mode, which is actively maintained by the Emacs developers.
 
