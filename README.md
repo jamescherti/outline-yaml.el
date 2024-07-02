@@ -61,11 +61,13 @@ If you want to make the ellipsis of `outline-yaml-mode` look like the screenshot
 
 The `origami.el` package is no longer actively maintained and has known bugs that can affect its reliability and performance.
 
-On the other hand, `outline-yaml.el` leverages the built-in outline-minor-mode, which is actively maintained by the Emacs developers.
+On the other hand, `outline-yaml.el` leverages the built-in `outline-minor-mode`, which is actively maintained by the Emacs developers.
 
 ### Why not use ts-fold or treesit-fold?
 
-The ts-fold or treesit-fold can be an excellent choice for users of `yaml-ts-mode`. The outline-yaml Emacs package, on the other hand, is more suited for:
+The ts-fold or treesit-fold can be a good alternative for Tree Sitter users.
+
+The `outline-yaml.el` Emacs package, on the other hand, is more suited for:
 - Users of `yaml-mode` who have not yet switched to tree-sitter,
 - Users who prefer `outline-minor-mode` because it works out of the box with Emacs Evil key mapping (although adding Emacs Evil support for treesit-fold is straightforward),
 - Users who have extensively customized `outline-minor-mode` to fit their needs.
