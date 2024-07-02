@@ -46,7 +46,7 @@ You can also enable it automatically for all YAML files by adding the following 
 
 Once enabled, you can use the standard `outline-mode`/`outline-minor-mode` commands to fold and unfold sections of your YAML file.
 
-## How to change the Ellipsis ("...") to (▼)?
+## How to change the Ellipsis (...) to (▼)?
 
 If you want to make the ellipsis of `outline-yaml-mode` look like the screenshot above (▼), use the code snippet in this article: [Changing the Ellipsis (“…”) in outline-mode and outline-minor-mode.](https://www.jamescherti.com/emacs-customize-ellipsis-outline-minor-mode/).
 
