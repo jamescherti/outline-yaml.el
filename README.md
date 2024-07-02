@@ -31,22 +31,29 @@ To install the `outline-yaml` using `straight.el`:
 
 ## Usage
 
-To start using outline-yaml.el, enable the minor mode in your YAML buffer:
+### Vanilla Emacs
 
-```
-(outline-yaml-minor-mode)
-```
+Once installed with `use-package` and activated with `outline-yaml-minor-mode` in a YAML buffer, you can use the standard `outline-mode`/`outline-minor-mode` commands to fold and unfold sections of your YAML file:
+- outline-hide-body: Hide all body lines in buffer, leaving all headings visible.
+- outline-hide-other: Hide everything except current body and parent and top-level headings.
+- outline-hide-entry: Hide the body directly following this heading.
+- outline-hide-leaves: Hide the body after this heading and at deeper levels.
+- outline-hide-subtree: Hide everything after this heading at deeper levels.
+- outline-show-children: Show all direct subheadings of this heading.
+- outline-hide-sublevels: Hide everything but the top LEVELS levels of headers, in whole buffer.
+- outline-show-all: Show all of the text in the buffer.
+- outline-show-entry: Show the body directly following this heading.
+- outline-show-subtree: Show everything after this heading at deeper levels.
+- outline-show-branches: Show all subheadings of this heading, but not their bodies.
+- outline-show-children: Show all direct subheadings of this heading.
 
-You can also enable it automatically for all YAML files by adding the following to your Emacs configuration:
+### Evil mode
 
-```
-(yaml-mode . outline-yaml-minor-mode)
-(yaml-ts-mode . outline-yaml-minor-mode)
-```
+In Evil mode, it works out of the box, and you can use the Evil keyboard mappings: zo, zc, zO, zC, za, zr, and zm to manage folds.
 
-Once enabled, you can use the standard `outline-mode`/`outline-minor-mode` commands to fold and unfold sections of your YAML file.
+## Frequently asked questions
 
-## How to change the Ellipsis (...) to (▼)?
+### How to change the Ellipsis (...) to (▼)?
 
 If you want to make the ellipsis of `outline-yaml-mode` look like the screenshot above (▼), use the code snippet in this article: [Changing the Ellipsis (“…”) in outline-mode and outline-minor-mode](https://www.jamescherti.com/emacs-customize-ellipsis-outline-minor-mode/).
 
