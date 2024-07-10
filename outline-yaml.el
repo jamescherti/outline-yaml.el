@@ -41,6 +41,11 @@
           :tag "Github"
           "https://github.com/jamescherti/outline-yaml.el"))
 
+(defvar outline-yaml-minor-mode-map
+  (let ((map (make-sparse-keymap)))
+    map)
+  "Keymap for `outline-yaml-minor-mode'.")
+
 (defun outline-yaml--level ()
   "Determine the outline level for YAML mode based on indentation."
   (let* ((space-count (current-indentation))
@@ -53,6 +58,7 @@
 (define-minor-mode outline-yaml-minor-mode
   "Toggle `outline-yaml-minor-mode'."
   :lighter " OutlYaml"
+  :keymap outline-yaml-minor-mode-map
   :group 'outline-yaml
   (if outline-yaml-minor-mode
       (progn
