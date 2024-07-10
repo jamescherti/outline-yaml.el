@@ -85,3 +85,4 @@ You should have received a copy of the GNU General Public License along with thi
 ## Links
 
 - [outline-yaml.el @GitHub](https://github.com/jamescherti/outline-yaml.el)
+- Similar package from the same author: [outline-indent.el @GitHub](https://github.com/jamescherti/outline-indent.el)
