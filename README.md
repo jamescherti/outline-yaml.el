@@ -57,6 +57,16 @@ In Evil mode, `outline-yaml` works out of the box, and you can use the Evil keyb
 
 If you want to make the ellipsis of `outline-yaml-mode` look like the screenshot above (▼), use the code snippet in this article: [Changing the Ellipsis (“…”) in outline-mode and outline-minor-mode](https://www.jamescherti.com/emacs-customize-ellipsis-outline-minor-mode/).
 
+### Maintaining blank lines between folded sections
+
+The `outline-blank-line` variable can be set to `t` (true) to maintain blank lines between folded sections, making it easier to distinguish between folds:
+
+```
+(setq outline-blank-line t)
+```
+
+I recommend you read [Enhancing up and down subtree movement in outline-mode and outline-minor-mode](https://www.jamescherti.com/outline-mode-enhance-move-subtree-up-down/) to make `outline-move-subtree-up` and `outline-move-subtree-down` ignore the `outline-blank-line` variable, which allows moving the whole block up and down, including the blank line.
+
 ### Why not use origami.el?
 
 The `origami.el` package is no longer actively maintained and has known bugs that can affect its reliability and performance.
