@@ -1,6 +1,6 @@
 # outline-yaml.el - Emacs package: Outline and Code folding for YAML files
 
-_Recommendation:_ I recommend you to try a similar package from the same author: [outline-indent.el](https://github.com/jamescherti/outline-indent.el), which offers generic support for various indent-based text files such as YAML, Python, and others. It also offers a few interesting features such as moving indented subtrees up/down, customizing the ellipsis, and inserting a heading that creates a new line with the same indentation level/depth as the current line.)
+_Recommendation:_ I recommend you to try a similar package from the same author: [outline-indent.el](https://github.com/jamescherti/outline-indent.el), which offers generic support for various indent-based text files such as YAML, Python, and others. It also offers a few interesting features such as moving indented subtrees up/down, customizing the ellipsis, and inserting a heading that creates a new line with the same indentation level/depth as the current line, etc.)
 
 ## Introduction
 
