@@ -14,7 +14,7 @@ This package helps when editing long and complex YAML files, which makes code fo
 
 ### Install using straight
 
-To install the `outline-yaml` using `straight.el`:
+To install `outline-yaml` using `straight.el`:
 
 1. Install and configure [yaml-mode](https://github.com/yoshiki/yaml-mode) or `yaml-ts-mode`.
 
