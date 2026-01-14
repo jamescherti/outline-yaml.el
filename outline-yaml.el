@@ -1,6 +1,6 @@
 ;;; outline-yaml.el --- Code folding and Outline for Yaml files  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2024-2025  James Cherti | https://www.jamescherti.com/contact/
+;; Copyright (C) 2024-2026  James Cherti | https://www.jamescherti.com/contact/
 
 ;; Author: James Cherti
 ;; Version: 1.0.2
