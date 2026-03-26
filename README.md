@@ -23,7 +23,6 @@ To install `outline-yaml` with `straight.el`:
 2. Add the following code to your Emacs init file:
 ```
 (use-package outline-yaml
-  :ensure t
   :straight (outline-yaml
              :type git
              :host github
